@@ -1,0 +1,216 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 100%;
+  max-width: 1800px;
+  height: 15vh;
+  background-color: rgb(214, 252, 244);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo{
+  width: 35%;
+  color: rgb(151, 168, 172);
+  font-size: 2.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo:hover{
+  color:  rgb(108, 153, 163);
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.links li{
+  list-style: none;
+  margin-left: 4rem;
+}
+
+.links li a{
+  text-decoration: none;
+  width: 4rem;
+  color: rgb(151, 168, 172);
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.links li a:hover,
+.links li a:focus{
+  color: rgb(108, 153, 163);
+  border-bottom: 1px solid rgb(108, 153, 163);
+}
+h1{
+  font-weight: 600;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 25%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+  width: 50%;
+  margin: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  display: flex;
+}
+
+.startingContent{
+  margin-bottom: 50px;
+}
+
+.title{
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 15%;
+  margin-left: 0%;
+}
+
+.titlearea{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete{
+  color: #2c2b2e;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.deletePostForm:hover{
+  opacity: 1;
+}
+.fa-trash{
+  font-size: 12px;
+}
+
+.deletePostForm {
+  display: inline;
+  width: 85%;
+  margin: auto auto;
+  opacity: .4;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  padding-left: 330px;
+}
+
+.add-blog{
+  width: 50%;
+  margin-left: 360px;
+  background-color: rgb(205, 255, 238);
+  border-radius: 30px;
+  font-size: .7em;
+  color: black;
+  font-weight: 900;
+  padding: .2em 43.6em .2em 1em;
+  text-decoration: none;
+  opacity: 0.2;
+}
+
+.add-blog:hover{
+  opacity: 1;
+}
+
+.content{
+  font-size: .9rem;
+  padding-bottom: 1.2rem;
+}
+
+.line{
+  width: 50%;
+  height: 1px;
+  background-color: rgb(214, 214, 214);
+  margin: auto;
+}
+
+.blog{
+  width: 70%;
+  margin-left: 7.5%;
+}
+
+.blogLink{
+  font-size: .9rem;
+  text-decoration: none;
+  color: rgb(88, 87, 87);
+}
+
+.blogLink:hover, .blogLink:focus{
+  color: rgb(32, 32, 32);
+}
+.composeForm{
+  width: 50%;
+  margin: auto;
+}
+
+input[type="text"]{
+  width: 50%;
+  height: 30px;
+  padding: .5rem 1rem;
+  border-radius: 10px ;
+  border: 1px solid grey;
+  outline: none;
+  margin-bottom: 2rem;
+
+}
+
+input[type="text"]:focus,
+.blogtext:focus{
+  border: 2px solid rgb(108, 153, 163);
+  background-color: rgb(248, 253, 253);
+}
+
+.blogtext{
+  width: 90%;
+  margin: 0 auto 1.5rem auto;
+  min-height: 300px;
+  height: 100%;
+  padding: .5rem 1rem;
+  outline: none;
+}
+
+.composebtn{
+  padding: .45rem .8rem;
+  border-radius: 6px ;
+  border: 1px solid grey;
+  background-color: transparent;
+  color: rgb(108, 153, 163);
+  background-color: rgb(214, 252, 244);
+  cursor: pointer;
+}
+
+.composebtn:focus{
+  box-shadow: 1px 1px 2px 2px rgb(219, 226, 232);
+}
+
+
+
+
+.footer{
+
+  width: 100%;
+  max-width: 1800px;
+  height: 6vh;
+  background-color: rgb(214, 252, 244);
+  text-align: center;
+  padding-top: 1%;
+  padding-left: 45%;
+  font-size: .7rem;
+  color: grey;
+}
+
+.extraspace{
+  height: 50vh;
+}

@@ -1,0 +1,37 @@
+<%-
+include("header");
+-%>
+  
+
+
+<h1>Home</h1>
+<p class="startingContent">
+  <%= startingContent %>
+</p>
+
+
+  <%  posts.forEach((post)=>{ %>
+    <div class="blog">
+    <div class="titlearea">  
+    <h1 class="title"><%= post.title %></h1>
+    <form action="/delete" method="post" class="deletePostForm">
+      <button class="delete" type="submit" name="del" value="<%= post._id %>">
+        <i class="fas fa-trash"></i>
+     </button>
+   </form> 
+  </div>
+    <p class="content"><%= post.content.substring(0,50) + " ..."  %>
+    <a href="/posts/<%= post._id%>" class="blogLink">Read More</a> </p>
+    <div class="line"></div>
+  </div>
+  <%}); %>
+  <a href="/compose" class="add-blog">+</a>
+
+<div class="extraspace"></div>
+
+<%-
+include("footer");
+-%>
+
+</body>
+</html>

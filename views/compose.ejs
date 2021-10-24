@@ -1,0 +1,22 @@
+<%-
+include("header");
+-%>
+  
+
+
+<h1>Compose Blog</h1>
+<form action="/compose" method="post" class="composeForm">
+<input type="text" name="postTitle" placeholder="Enter title" autocomplete="off" required> <br>
+<textarea name="postBody" placeholder="Start typing..." class="blogtext" required></textarea>
+<br>
+<button type="submit" class="composebtn">Publish</button>
+</form>
+<div class="extraspace"></div>
+<%-
+include("footer");
+-%>
+
+
+
+</body>
+</html>
